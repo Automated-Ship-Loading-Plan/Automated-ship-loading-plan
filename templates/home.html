@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/main.css') }}"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            /* animation: rotation 2s infinite linear; */
+        }
+        
+        /* @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        } */
+        button{
+            color: #fff;
+            border: none;
+            padding-left: 0;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background: linear-gradient(-135deg, #c850c0, #4158d0);
+            transition: all 0.3s ease;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            padding-left: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+           
+        }
+
+
+        .field{
+            height: 50px;
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        /* .my-button{
+            width:1000px;
+            height: 50px;
+            font-size: 15px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top: 150px;
+            margin-left: 160px;
+            box-shadow: 2px 2px grey;
+            border-radius: 6px;
+        }
+        .my-button:hover{
+            color: red;
+            background-color: green;
+         }
+        .my-button2{
+            width:1000px;
+            height: 50px;
+            font-size: 15px;
+            background-color: orange;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 160px;
+            box-shadow: 2px 2px grey;
+            border-radius: 6px;
+            
+            
+        }
+        .my-button2:hover{
+            color: red;
+            background-color: green;
+        }
+        .my-button3{
+            width:1000px;
+            height: 50px;
+            font-size: 15px;
+            background-color: red;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 160px;
+            box-shadow: 2px 2px grey;
+            border-radius: 6px;
+        }
+        .my-button3:hover{
+            color: red;
+            background-color: green;
+        }
+        .my-button4{
+            width:1000px;
+            height: 50px;
+            font-size: 15px;
+            background-color:yellow;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 160px;
+            box-shadow: 2px 2px grey;
+            border-radius: 6px;
+        }
+        .my-button4:hover{
+            color: red;
+            background-color: green;
+        }
+        a{
+            text-decoration: none;
+        }
+        */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color:linear-gradient(-135deg, #c850c0, #4158d0);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Stowage Plan Generation</a></li>
+
+        <li style="float:right"><a class="active" href="/">Log Out</a></li>
+    </ul>
+
+    <div class="field">
+    <!--<button class="my-button">Generate Plan With Saved Ship</button> <br> -->
+    <button class="my-button2"> <a href="bayinput" style="text-decoration: none">Create  a new
+            plan</a></button><br>
+    <!-- <button class="my-button3">Save Container Details </button><br> -->
+    <button class="my-button4"><a href="planhistory" style="text-decoration: none">History</a></button></div> 
+</body>
+
+</html>
